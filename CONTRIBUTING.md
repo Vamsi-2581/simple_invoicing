@@ -100,15 +100,15 @@ Run tests before opening a PR.
 
 ### Frontend unit tests
 
-Run the Vitest suite from `frontend/`:
+Run the Vitest suite from the repository root:
 
 ```bash
-npm test
-npm test -- --run
+cd frontend && npm test
+cd frontend && npm test -- --run
 ```
 
-The first command starts Vitest in watch mode; use `npm test -- --run` for a
-single run. Frontend CI runs the suite before the production build.
+The first command starts Vitest in watch mode; use the second for a single run.
+Frontend CI runs the suite before the production build.
 
 ### Frontend E2E
 
